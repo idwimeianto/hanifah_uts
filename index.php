@@ -55,7 +55,7 @@
         <td>". $data["Tempat_Lahir"]."</td>
         <td>". $data["Tanggal_Lahir"]."</td>
         <td>". $data["Nomor_Handphone"]."</td>
-        <td>". $data["Cita-cita"]."</td>
+        <td>". $data["Cita_cita"]."</td>
         <td>". $data["Pembimbing_Akademik"]."</td>
         <td>". $data["Nama_MK"]."</td>
         <td>". $data["Kode_MK"]."</td>
