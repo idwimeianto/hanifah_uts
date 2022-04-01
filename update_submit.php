@@ -51,17 +51,15 @@
    $Email = $_POST['Email'];
    //echo $_POST;
    //buat query
-   $query_str = "UPDATE mahasiswa set Angkatan='$Angkatan', Kelas='$Kelas', Jenis_Kelamin='$Jenis_Kelamin', ";
+   $query_str = "UPDATE mahasiswa SET Angkatan='$Angkatan', Kelas='$Kelas', Jenis_Kelamin='$Jenis_Kelamin', ";
    $query_str .= "Nama='$Nama', Alamat='$Alamat', Hobi='$Hobi', Tempat_Lahir='$Tempat_Lahir', Tanggal_Lahir='$Tanggal_Lahir', ";
    $query_str .= "Nomor_Handphone='$Nomor_Handphone', Cita_cita='$Cita_cita', Pembimbing_Akademik='$Pembimbing_Akademik', ";
    $query_str .= "Nama_MK='$Nama_MK', Kode_MK='$Kode_MK', Dosen_MK='$Dosen_MK', UKM='$UKM', UKK='$UKK', Organisasi='$Organisasi', ";
    $query_str .= "Bobot_Nilai='$Bobot_Nilai', Bobot_Angka='$Bobot_Angka', Email='$Email' ";
-   $query_str .= "where ID='$key'";
+   $query_str .= "WHERE ID='$key'";
 
    //eksekusi
    $query = mysqli_query($con, $query_str);
-
-   echo $query;
 
    echo "Sukses ... <br>" ;
    echo $Angkatan;
