@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <title>Hanifah</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Data Mahasiswa</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  
+    <!-- <br> -->
+    <div class="card container w-75 p-5">
+      <h2 class="card-title">Tabel Mahasiswa</h2>
+       <!-- buat form search  -->
+    <form action="index.php" method="post">
+      <input id="filter" type="text" name='filter' placeholder="filter">
+      <input type="submit"name='submit'>
+      <input type="reset" name='reset'>    
+  </form>
+      <!-- Tabel 1 - Task -->
+      <div class="w-100" style="margin: 4px, 4px;
+      padding: 20x;
+      
+      width: 300px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;">
+        <!-- TABEL1 -->
+        <table class="table">
+          <tr>
+            <td>ID</td>
+            <td>NIM</td>
+            <td>Angkatan</td>
+            <td>Kelas</td>
+            <td>Jenis Kelamin</td>
+            <td>Nama</td>
+            <td>Alamat</td>
+            <td>Hobi</td>
+            <td>Tempat Lahir</td>
+            <td>Tanggal Lahir</td>
+            <td>Nomor Handphone</td>
+            <td>Cita-cita</td>
+            <td>Pembimbing Akademik</td>
+            <td>Nama MK</td>
+            <td>Kode MK</td>
+            <td>Dosen MK</td>
+            <td>UKM</td>
+            <td>UKK</td>
+            <td>Organisasi</td>
+            <td>Bobot Nilai</td>
+            <td>Bobot Angka</td>
+            <td>Email</td>
+          </tr>
+          <tr>
+            <!-- DATA YG AKAN DIGANTI -->
+            DATA_TABEL
+          </tr>
+  
+        </table>
+      </div>
+  
+      <button type="button" class="btn btn-primary" style="justify-content: center;">New Record</button>
+    </div>
+   
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
