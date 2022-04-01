@@ -25,7 +25,7 @@
    //koneksi ke db
    $con = mysqli_connect("localhost","root","","db_webuts");
    //tampung semua var form
-   
+
    //$key = $_GET['ID'];
    $key = $_GET['key'];
    $NIM = $_POST['NIM'];
@@ -51,14 +51,17 @@
    $Email = $_POST['Email'];
    //echo $_POST;
    //buat query
-   $query_str = "update mahasiswa set key='$key' Angkatan = '$Angkatan',Kelas = '$Kelas',Jenis_Kelamin = '$Jenis_Kelamin',
-                  Nama = '$Nama',Alamat = '$Alamat', Hobi = '$Hobi',Tempat_Lahir = '$Tempat_Lahir',Tanggal_Lahir = '$Tanggal_Lahir',
-                  Nomor_Handphone = '$Nomor_Handphone',Cita-cita = '$Cita_cita',Pembimbing_Akademik = '$Pembimbing_Akademik',
-                  Nama_MK = '$Nama_MK',Kode_MK = '$Kode_MK',Dosen_MK = '$Dosen_MK',UKM = '$UKM',UKK = '$UKK',Organisasi = '$Organisasi',
-                  Bobot_Nilai = '$Bobot_Nilai',Bobot_Angka = '$Bobot_Angka', Email = '$Email' where NIM = '$NIM'";
+   $query_str = "UPDATE mahasiswa set Angkatan='$Angkatan', Kelas='$Kelas', Jenis_Kelamin='$Jenis_Kelamin', ";
+   $query_str .= "Nama='$Nama', Alamat='$Alamat', Hobi='$Hobi', Tempat_Lahir='$Tempat_Lahir', Tanggal_Lahir='$Tanggal_Lahir', ";
+   $query_str .= "Nomor_Handphone='$Nomor_Handphone', Cita_cita='$Cita_cita', Pembimbing_Akademik='$Pembimbing_Akademik', ";
+   $query_str .= "Nama_MK='$Nama_MK', Kode_MK='$Kode_MK', Dosen_MK='$Dosen_MK', UKM='$UKM', UKK='$UKK', Organisasi='$Organisasi', ";
+   $query_str .= "Bobot_Nilai='$Bobot_Nilai', Bobot_Angka='$Bobot_Angka', Email='$Email' ";
+   $query_str .= "where ID='$key'";
 
    //eksekusi
    $query = mysqli_query($con, $query_str);
+
+   echo $query;
 
    echo "Sukses ... <br>" ;
    echo $Angkatan;
