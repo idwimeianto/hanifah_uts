@@ -82,7 +82,7 @@
 
     // Menampilkan ke layar
     $tpl->write();
-    echo "<a href='new.php'>New Record </a><br>";
+    // echo "<a href='new.php'>New Record </a><br>";
     ?>
 </body>
 </html>
